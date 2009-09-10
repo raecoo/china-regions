@@ -1,0 +1,28 @@
+To provide a list all regions of China, and includes province, city, district and parents relationship
+
+There are three formats(xml,cvs,sql) of the data source.
+
+For example:
+
+id  name    parent_id   ids_path    name_path
+-----------------------------------------------
+1	  北京市	    0	          1	          北京市
+36	北京市	    1	          1|36	      北京市|北京市
+373	东城区	    36	        1|36|373	  北京市|北京市|东城区
+374	西城区	    36	        1|36|374	  北京市|北京市|西城区
+375	崇文区	    36	        1|36|375	  北京市|北京市|崇文区
+376	宣武区	    36	        1|36|376	  北京市|北京市|宣武区
+377	朝阳区	    36	        1|36|377	  北京市|北京市|朝阳区
+
+id  name    parent_id   ids_path    name_path
+-----------------------------------------------
+3	  河北省	    0	          3	          河北省
+38	石家庄市	  3	          3|38	      河北省|石家庄市
+409	长安区	    38	        3|38|409	  河北省|石家庄市|长安区
+410	桥东区	    38	        3|38|410	  河北省|石家庄市|桥东区
+411	桥西区	    38	        3|38|411	  河北省|石家庄市|桥西区
+412	新华区	    38	        3|38|412	  河北省|石家庄市|新华区
+
+NOTE:
+
+field name_path order by province/city/district.
