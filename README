@@ -25,4 +25,4 @@ id  name    parent_id   ids_path    name_path
 
 NOTE:
 
-field name_path order by province/city/district.
+fields ids_path/name_path order by province/city/district.
